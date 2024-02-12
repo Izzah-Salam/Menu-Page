@@ -11,15 +11,17 @@
     <div class="flex flex-col items-center bg-blue-100 min-h-screen p-10">
       <h1 class="sm:text-3xl font-semibold">Our Menu</h1>
       <div class="underline underline-offset-1"></div>
+      <!-- filter buttons -->
       <div class="my-5">
-        <button class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700">All</button>
-        <button class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700">Breakfast</button>
-        <button class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700">Lunch</button>
-        <button class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700">Shakes</button>
+        <button data-id="all" class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700 btn">All</button>
+        <button data-id="breakfast" class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700 btn">Breakfast</button>
+        <button data-id="lunch" class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700 btn">Lunch</button>
+        <button data-id="shake" class="text-amber-700 border-solid border-2 px-2 rounded-lg m-2 border-amber-700 btn">Shakes</button>
       </div>
-      <div class="grid lg:grid-cols-2  grid-cols-1 gap-x-20 gap-y-16 mx-10 mt-20">
-        <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/buttermilk.avif);"></div>
+      <!-- menu items -->
+      <div class="grid lg:grid-cols-2  grid-cols-1 gap-x-20 gap-y-16 mx-10 mt-20" id="menu-section">
+        <!-- <div class="flex">
+          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full h-full  bg-cover bg-center bg-no-repeat" style="background-image: url(./img/buttermilk.avif);"></div>
           <div>
             <div class="flex justify-between border-b-2 border-amber-600">
               <h1 class="font-semibold">Buttermil Pancakes</h1>
@@ -31,117 +33,7 @@
            
           </div>
 
-        </div>
-        <!-- secound column -->
-        <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/dinner.avif);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">Dinner Double</h1>
-              <h3 class="text-amber-700">$25.99</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-        <!-- thirst column -->
-        <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/shake.avif);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">Godzilla Milkshake</h1>
-              <h3 class="text-amber-700">$10.00</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-         <!-- secound column -->
-         <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/krhai.jpg);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">Country Deligt</h1>
-              <h3 class="text-amber-700">$20.99</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-        <!-- thirst column -->
-         <!-- secound column -->
-         <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-no-repeat" style="background-image: url(./img/egg.jpg);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">Egg Attack</h1>
-              <h3 class="text-amber-700">$15.99</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-        <!-- thirst column -->
-         <!-- secound column -->
-         <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/oreo.jpg);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">Oreo Dream</h1>
-              <h3 class="text-amber-700">$25.99</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-        <!-- thirst column -->
-         <!-- secound column -->
-         <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/rasmalai.jpg);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">Ras Malai</h1>
-              <h3 class="text-amber-700">$30.00</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-        <!-- thirst column -->
-         <!-- secound column -->
-         <div class="flex ">
-          <div class="border-solid border-2 border-amber-600 rounded-lg overflow-hidden mr-5 w-full bg-cover bg-center bg-no-repeat" style="background-image: url(./img/kbab.jpg);"></div>
-          <div>
-            <div class="flex justify-between border-b-2 border-amber-600">
-              <h1 class="font-semibold">kbab Roll</h1>
-              <h3 class="text-amber-700">$25.99</h3>
-            </div>
-            <div class="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis ipsum iste cum? Corporis quasi dolor molestiae sapiente sed deleniti!
-            </div>
-           
-          </div>
-
-        </div>
-        <!-- thirst column -->
+        </div> -->
         
       </div>
 
